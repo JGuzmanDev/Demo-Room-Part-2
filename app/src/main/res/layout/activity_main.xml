@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Person name" />
+
+        <Button
+            android:id="@+id/btn_save_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btn_list_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/teal_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Car Form"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/et_car_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:hint="Brand"
+            android:inputType="textPersonName"
+            android:paddingEnd="20dp" />
+
+        <EditText
+            android:id="@+id/et_person_fk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:hint="Person Foreign Key"
+            android:inputType="numberSigned"
+            android:paddingEnd="20dp" />
+
+        <Button
+            android:id="@+id/btn_save_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btn_list_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List" />
+
+        <Button
+            android:id="@+id/btn_find_car_by_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Car by Person" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/purple_700"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Relationship Person and Contact"/>
+
+        <EditText
+            android:id="@+id/et_person_contact_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Person ID"
+            />
+
+        <EditText
+            android:id="@+id/et_person_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Contact Name"/>
+
+        <Button
+            android:id="@+id/btn_save_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Contact" />
+
+        <Button
+            android:id="@+id/btn_list_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Contact" />
+
+        <Button
+            android:id="@+id/btn_list_contact_person_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Contact Join Person" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
